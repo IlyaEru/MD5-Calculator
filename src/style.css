@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root{
-    font-size: clamp(.6rem, 1.5vw, 1.5rem);
+    font-size: clamp(.6rem, 1.5vw, 1.3rem);
 }
 body {
     width: 100%;
@@ -24,7 +24,35 @@ main {
     font-weight: 700;
     margin: 1rem 0;
 }
+.warning {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #fde9e9;
+    border: 2px solid #f44336;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
 
+@media (max-width: 1000px) {
+    .warning{
+        max-width: 600px;
+    }
+}
+@media (max-width: 768px) {
+    .warning{
+        max-width: 400px;
+    }
+}
+
+.warning-label {
+    display: inline-block;
+    color: #f44336;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 16px;
+}
 .input-options{
     display: flex;
     flex-direction: column;

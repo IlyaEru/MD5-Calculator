@@ -62,6 +62,12 @@ function App() {
     <main>
       <h1 className="hero">MD5 Calculator</h1>
       <h2 className="choose-header">Choose file or directory</h2>
+      <p className="warning">
+        <span className="warning-label">Warning:</span> Processing large amount
+        of files can be resource-intensive and may cause performance issues on
+        your browser. We recommend selecting smaller amount of files to ensure a
+        smooth experience.
+      </p>
       <div className="input-options">
         <div className="input-group">
           <label htmlFor="file-input">Choose Files</label>
