@@ -105,7 +105,13 @@ function App() {
       <h2>Selected files: {selectedFiles.length}</h2>
       <button onClick={calculateMd5}>calculate MD5</button>
       {calculatedFilesMd5.length > 0 && (
-        <Table className="data-table" dataSource={data}>
+        <Table
+          className="data-table"
+          dataSource={data}
+          scroll={{
+            x: 500,
+          }}
+        >
           <Column title="Name" dataIndex="name" key="name" />
           <Column title="MD5" dataIndex="md5" key="md5" />
         </Table>
